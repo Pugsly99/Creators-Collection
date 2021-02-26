@@ -1,4 +1,4 @@
-# <div align="center">Tap House</div>
+# <div align="center">Creators Collection</div>
 
 <p align="center">
     <br>
