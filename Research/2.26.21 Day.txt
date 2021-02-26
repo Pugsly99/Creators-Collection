@@ -3,3 +3,4 @@
 9:30 - 10:30 - Color scheme || https://coolors.co/de354c-932432-3c1874-283747-f3f3f3
 10:30 - 11:00 - Proposal 
 11:00 - 12:00 - Firebase
+1:00 - 2:15 - Power went out so I did research and watched videos on react
