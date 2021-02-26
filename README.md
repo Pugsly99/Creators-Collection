@@ -40,10 +40,10 @@ A React site used to track Keg availability and selection!
 #### To Clone:
 - Open your preferred command line program.
 - Navigate to the location or directory you'd like the project directory to be created in. (e.g., "cd Desktop" if you'd like to clone the project to your desktop)
-- Enter the command "$ git clone https://github.com/Pugsly99/tap-house" in your command line.
+- Enter the command "$ git clone https://github.com/Pugsly99/Creators-Collection" in your command line.
 
 #### To Download:
-- Navigate to the [project repository](https://github.com/Pugsly99/tap-house) in your browser.
+- Navigate to the [project repository](https://github.com/Pugsly99/Creators-Collection) in your browser.
 - Click the green "Code" button toward the top right of the page.
 - Click "Download ZIP" and extract the files.
 - Open the newly-downloaded project in your preferred code editor.
