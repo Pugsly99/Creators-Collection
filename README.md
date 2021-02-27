@@ -18,7 +18,7 @@ A site to display and get into contact with Creative people!
 
 # 📸 Component Diagram
 
-![Component Diagram](./READMEAssets/Diagram.png)
+![Component Diagram](./README_Assets/Diagram.png)
 
 # 🧑‍💻 Contributers
 
