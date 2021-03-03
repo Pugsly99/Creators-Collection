@@ -1,0 +1,35 @@
+Name of Student: Ryland Adams
+
+Name of Project: Creators Collection 
+
+Project's Purpose or Goal: To allow for the creatives within my group to show/sell/connect with others about their art 
+
+List the absolute minimum features the project requires to meet this purpose or goal:
+
+Have separate sections for each creator
+
+Have a form where you can email the creator specifically
+
+More TBD
+
+What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
+
+React
+
+Firebase
+
+Research into Swift
+
+More TBD
+
+If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
+
+Add cart functionality
+
+Each person gets a little card with links to all their Social Media
+
+Look into Mobile Dev
+
+What additional tools, frameworks, libraries, APIs, or other resources will these additional features require?
+
+TBD
