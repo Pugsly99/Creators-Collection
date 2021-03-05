@@ -12,28 +12,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App(){
   return (
-    <div className='App'>
-      <Router>
-        <SideBar />
-        <Switch>
-          <Route path='/'>
-            <About />
-          </Route>
-          <Route path='/Contact'>
-            <Contact />
-          </Route>
-          <Route path='/Artists'>
-            <Artists />
-          </Route>
-          <Route path='/Musicians'>
-            <Musicians />
-          </Route>
-          <Route path='/Designers'>
-            <Designers />
-          </Route>
-        </Switch>
-      </Router>
-    </div>
+    <>
+    <SideBar />
+    </>
   );
 }
 
