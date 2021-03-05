@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import SideBar from './SideBar';
+import About from './About';
+import Contact from './Contact';
+import Artists from './Artists';
+import Musicians from './Musicians';
+import Designers from './Designers';
 
-function App() {
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+
+function App(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Router>
+        <SideBar />
+        <Switch>
+          <Route path='/'>
+            <About />
+          </Route>
+          <Route path='/Contact'>
+            <Contact />
+          </Route>
+          <Route path='/Artists'>
+            <Artists />
+          </Route>
+          <Route path='/Musicians'>
+            <Musicians />
+          </Route>
+          <Route path='/Designers'>
+            <Designers />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
