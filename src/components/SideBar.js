@@ -7,11 +7,11 @@ import {SideBarData} from './SideBarData';
 import SubMenu from './SubMenu';
 
 const Nav = styled.div`
-background: #15171c;
-height: 80px;
-display: flex;
-justify-content: flex-start:
-align-items: center;
+  background: #15171c;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 `;
 
 const NavIcon = styled(Link)`
@@ -20,6 +20,7 @@ const NavIcon = styled(Link)`
   height: 80px;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 `;
 
 const SidebarNav = styled.nav`

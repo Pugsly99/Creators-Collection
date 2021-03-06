@@ -1,5 +1,5 @@
-import React from 'react';
-import { IoMdHeartEmpty } from 'react-icons/io';
+import { Dropdown } from 'bootstrap';
+import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -13,25 +13,42 @@ const SideBarLink = styled(Link)`
   height: 60px;
   text-decoration: none;
   font-size: 18px;
-
-  &:hover: #252831;
-  border-left: 4px solid #632ce4
-  cursor: pointer;
+  &:hover {
+    background: #252831;
+    border-left: 4px solid #632ce4;
+    cursor: pointer;
+  }
 `;
 
 const SidebarLabel = styled.span`
-
+  margin-left: 16px;
 `;
 
+const DropdownLink = styled(Link)`
+  background: #414757;
+`
+
 const SubMenu = ({ item }) => {
+  const [subnav, setSubnav] = useState(false)
+
+  const showSubnav = () => setSubnav(!subnav)
   return (
     <>
-      <SideBarLink to={item.path}>
+      <SideBarLink to={item.path} onClick={item.subNav && showSubnav}>
         <div>
           {item.icon}
           <SidebarLabel>{item.title}</SidebarLabel>
         </div>
+        <div>
+          {item.subNav && subnav ? item.iconOpened : item.subNav ? item.iconClosed : null}
+        </div>
       </SideBarLink>
+      {subnav && item.subNav.map((item, index) => {
+        <DropdownLink to={item.path} key={index}>
+          {item.icon}
+          <SidebarLabel>{item.title}</SidebarLabel>
+        </DropdownLink>
+      })}
     </>
   )
 }
