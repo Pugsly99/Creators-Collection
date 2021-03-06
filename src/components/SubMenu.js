@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const SideBarLink = styled(Link)`
   display: flex;
-  color: #e1e9fc;
+  color: #F3F3F3;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
@@ -15,7 +15,7 @@ const SideBarLink = styled(Link)`
   font-size: 18px;
   &:hover {
     background: #252831;
-    border-left: 4px solid #632ce4;
+    border-left: 4px solid #DE354C;
     cursor: pointer;
   }
 `;
@@ -25,7 +25,19 @@ const SidebarLabel = styled.span`
 `;
 
 const DropdownLink = styled(Link)`
-  background: #414757;
+  background: #425B76;
+  height: 60px;
+  padding-left: 3rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 18px;
+
+  &:hover {
+    background: #932432;
+    cursor: pointer;
+  }
 `
 
 const SubMenu = ({ item }) => {
@@ -44,10 +56,12 @@ const SubMenu = ({ item }) => {
         </div>
       </SideBarLink>
       {subnav && item.subNav.map((item, index) => {
-        <DropdownLink to={item.path} key={index}>
-          {item.icon}
-          <SidebarLabel>{item.title}</SidebarLabel>
-        </DropdownLink>
+        return (
+          <DropdownLink to={item.path} key={index}>
+            {item.icon}
+            <SidebarLabel>{item.title}</SidebarLabel>
+          </DropdownLink>
+        )
       })}
     </>
   )

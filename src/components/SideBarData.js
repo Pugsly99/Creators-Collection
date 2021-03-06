@@ -6,65 +6,94 @@ import * as RiIcons from 'react-icons/ri'
 
 export const SideBarData = [
   {
-    title: 'About',
-    path: '/about',
+    title: 'Home',
+    path: '/home',
     icon: <AiIcons.AiFillHome />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
   },
   {
-    title: 'Artists',
-    path: '/overview1',
+    title: 'Musicians',
+    path: '/musicians',
     icon: <AiIcons.AiFillHome />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
     subNav: [
       {
-        title: 'Users',
-        path: '/overview/users',
+        title: 'Dominic Fike',
+        path: '/musicians/dominicfike',
         icon: <IoIcons.IoIosPaper />,
       },
       {
-        title: 'test2',
-        path: '/overview/test2',
+        title: 'Benee',
+        path: '/musicians/benee',
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: 'Frank Ocean',
+        path: '/musicians/frankocean',
         icon: <IoIcons.IoIosPaper />,
       },
     ]
   },
   {
-    title: 'Musicians',
-    path: '/overview2',
+    title: 'Artists',
+    path: '/artists',
     icon: <AiIcons.AiFillHome />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
     subNav: [
       {
-        title: 'Users2',
-        path: '/overview/users2',
+        title: 'Pablo Picasso',
+        path: '/artists/pablopicasso',
         icon: <IoIcons.IoIosPaper />,
       },
       {
-        title: 'test3',
-        path: '/overview/test3',
+        title: 'Alex Lafollette',
+        path: '/artists/alexlafollette',
         icon: <IoIcons.IoIosPaper />,
       },
     ]
   },
   {
     title: 'Designers',
-    path: '/overview3',
+    path: '/designers',
     icon: <AiIcons.AiFillHome />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
     subNav: [
       {
-        title: 'Users3',
-        path: '/overview/users3',
+        title: 'Calvin Klein',
+        path: '/designers/calvinklein',
         icon: <IoIcons.IoIosPaper />,
       },
       {
-        title: 'test3',
-        path: '/overview/test3',
+        title: 'Versace',
+        path: '/designers/versace',
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: 'Louis Vuitton',
+        path: '/designers/louisvuitton',
+        icon: <IoIcons.IoIosPaper />,
+      },
+    ]
+  },
+  {
+    title: 'About',
+    path: '/about',
+    icon: <AiIcons.AiFillHome />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+    subNav: [
+      {
+        title: 'Contact Us',
+        path: '/about/contactus',
+        icon: <IoIcons.IoIosPaper />,
+      },
+      {
+        title: 'Our Plan',
+        path: '/about/ourplan',
         icon: <IoIcons.IoIosPaper />,
       },
     ]
