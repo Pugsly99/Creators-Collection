@@ -1,16 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); */
+
+/* @font-face {
+  font-family: 'akkurat';
+  src: url('./../Font/Akkurat.ttf') format('truetype');
+  src: url('./../Font/Akkurat.woff') format('woff');
+  src: url('./../Font/Akkurat.woff2') format('wolf');
+  src: url('./../Font/Akkurat.eot');
+} */
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Quicksand";
-  /* color: rgb(31, 95, 192); */
+  font-family: 'Quicksand';
 }
 
-.pageHeader {
-  font-size: xx-large;
-  margin: auto;
+body {
+  background-color: rgb(163, 163, 163);
 }
 
 
