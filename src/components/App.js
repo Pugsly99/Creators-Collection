@@ -10,6 +10,9 @@ import PobloPicasso from './Artists/PobloPicasso';
 import CalvinKlein from './Designers/CalvinKlein';
 import Versace from './Designers/Versace';
 import LouisVuitton from './Designers/LouisVuitton';
+import OurPlan from './About/OurPlan';
+import ContactUs from './About/ContactUs';
+
 
 
 function App(){
@@ -26,6 +29,8 @@ function App(){
         <Route path = "/Designers/CalvinKlein" exact component = {CalvinKlein} />
         <Route path = "/Designers/Versace" exact component = {Versace} />
         <Route path = "/Designers/LouisVuitton" exact component = {LouisVuitton} />
+        <Route path = "/About/OurPlan" exact component = {OurPlan} />
+        <Route path = "/About/ContactUs" exact component = {ContactUs} />
       </Switch>
     </Router>
   );
