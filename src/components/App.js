@@ -1,18 +1,32 @@
 import React from 'react';
-import SideBar from './SideBar';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import About from './About';
-import Contact from './Contact';
-import Artists from './Artists';
-import Musicians from './Musicians';
-import Designers from './Designers';
-import { FaRProject } from 'react-icons/fa';
+import SideBar from './SideBar';
+import Home from './Home';
+import DominicFike from './Musicians/DominicFike';
+import Benee from './Musicians/Benee';
+import FrankOcean from './Musicians/FrankOcean';
+import AlexLafollette from './Artists/AlexLafollette';
+import PobloPicasso from './Artists/PobloPicasso';
+import CalvinKlein from './Designers/CalvinKlein';
+import Versace from './Designers/Versace';
+import LouisVuitton from './Designers/LouisVuitton';
 
 
 function App(){
   return (
     <Router>
-    <SideBar />
+        <SideBar />
+      <Switch>
+        <Route path = "/home" exact component = {Home} />
+        <Route path = "/musicians/dominicfike" exact component = {DominicFike} />
+        <Route path = "/musicians/benee" exact component = {Benee} />
+        <Route path = "/musicians/frankocean" exact component = {FrankOcean} />
+        <Route path = "/Artists/pablopicasso" exact component = {PobloPicasso} />
+        <Route path = "/Artists/alexlafollette" exact component = {AlexLafollette} />
+        <Route path = "/Designers/CalvinKlein" exact component = {CalvinKlein} />
+        <Route path = "/Designers/Versace" exact component = {Versace} />
+        <Route path = "/Designers/LouisVuitton" exact component = {LouisVuitton} />
+      </Switch>
     </Router>
   );
 }
