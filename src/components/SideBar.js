@@ -10,8 +10,11 @@ import { IconContext } from 'react-icons/lib';
 
 const Nav = styled.div`
   background: #33475B;
+  margin-top: 10px;
+  margin-left: 10px;
   height: 80px;
   display: flex;
+  width: 100px;
   justify-content: flex-start;
   align-items: center;
 `;
